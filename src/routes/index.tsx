@@ -15,8 +15,7 @@ function Home() {
       <HtmlContent html={htmlCapa} />
       <p className="remissao" style={{ marginTop: "-0.4rem" }}>
         Autor: <strong>ChelfoIA</strong> · BSSP Centro Educacional ·
-        disciplina PRC0004. Texto fechado em 08/09/2026, com addenda editorial em
-        09/09/2026.{" "}
+        disciplina PRC0004. Texto fechado em 08/09/2026, versão 1.1 em 10/09/2026.{" "}
         <button type="button" className="link-quiet" onClick={reopenCover}>
           Ver a capa de abertura
         </button>
@@ -41,7 +40,7 @@ function Home() {
         <Link to="/atualizacoes" className="cover-card">
           <span className="k">Addenda</span>
           <h3>{ADDENDA.length} atualizações após o fechamento</h3>
-          <p>Correção 17,7%/8,8%, Simples, ADI da LC 227, split payment, 27,91% e IRRF de dividendos.</p>
+          <p>Versão 1.1: aviso de uso, art. 57 § 3º, CFC no ano-teste e changelog.</p>
         </Link>
       </div>
       <h2>Os quinze capítulos</h2>

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { WelcomeCover } from "./WelcomeCover";
 import { TocNav } from "./TocNav";
 import { SearchDialog } from "./SearchDialog";
+import { UseNotice } from "./UseNotice";
 import {
   CORPO_LABEL,
   TEMA_LABEL,
@@ -143,6 +144,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <TocNav currentHref={pathname} />
         </aside>
         <main className="miolo" id="conteudo">
+          <UseNotice />
           {children}
         </main>
       </div>

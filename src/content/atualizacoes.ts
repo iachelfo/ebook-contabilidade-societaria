@@ -103,6 +103,39 @@ export const ADDENDA: Addenda[] = [
     sourceLabel: "Orientação Técnica CFC nº 1/2026",
     sourceUrl: "https://www.reformatributaria.com/wp-content/uploads/2026/07/CFC_Orientacao_Tecnica-1.pdf",
   },
+  {
+    id: "auditoria-aviso",
+    date: "2026-09-10",
+    title: "Aviso de uso e versão 1.1: material educacional, não parecer",
+    chapters: [1, 3, 9, 11, 14],
+    summary:
+      "A revisão de 10/09/2026 incorpora achados de auditoria jurídica-contábil da versão pública. O site passa a exibir aviso permanente de que interpretações, cenários e memórias não substituem análise individual. Os capítulos 3, 9 e 11 foram reescritos nos trechos categóricos. A busca interna, o changelog e o índice de normas já existiam nesta edição e respondem a lacunas do HTML original.",
+    why: "Sem o aviso, o leitor trata tese e estimativa como regra vigente. A classificação da auditoria (necessita revisão substancial) deixa de ser verdadeira na parte em que o texto categórico foi o problema.",
+    sourceLabel: "Relatório executivo e técnico de auditoria, 09/09/2026",
+    sourceUrl: "https://ebook-contabilidade-societaria.vercel.app/",
+  },
+  {
+    id: "auditoria-art57",
+    date: "2026-09-10",
+    title: "Capítulo 9: o art. 57, § 3º, admite crédito em EPI, refeitório, saúde, creche, planos coletivos e vales",
+    chapters: [9],
+    summary:
+      "A redação vigente do art. 57 da LC 214/2025, dada pela LC 227/2026, continua a vedar uso ou consumo pessoal no caput e no § 5º, mas o § 3º exclui da vedação bens e serviços utilizados preponderantemente na atividade econômica: uniforme e EPI; alimentação e bebida não alcoólica no estabelecimento durante a jornada; saúde e creche no estabelecimento; planos de saúde e benefícios educacionais de acordo coletivo; vale-transporte, vale-refeição e vale-alimentação. A edição anterior aplicava a vedação por categoria e omitia essa matriz.",
+    why: "P0. Quem glosa crédito de EPI ou de refeitório com base no caput, sem o § 3º, aplica a lei pela metade.",
+    sourceLabel: "LC 214/2025, art. 57, na redação da LC 227/2026",
+    sourceUrl: "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+  },
+  {
+    id: "auditoria-cfc-2026",
+    date: "2026-09-10",
+    title: "Capítulo 11: reconhecimento de IBS/CBS em 2026 deixa de ser regra universal",
+    chapters: [11],
+    summary:
+      "O ponto-chave do capítulo 11 passou a separar o efeito fiscal (sem crédito nem débito, se a obrigação acessória foi cumprida) da política contábil. A Orientação Técnica CFC nº 1/2026, itens 29 e 30, admite posições favorável e contrária, é não vinculante e exige julgamento, documentação e notas explicativas. Também se distingue o gatilho jurídico de 01/08/2026 do marco operacional de 03/08/2026, e a publicação do Ato Conjunto RFB/CGIBS nº 1 no DOU de 23/12/2025, sem afirmar retificação em 24/12 não reconfirmada.",
+    why: "P0. Linguagem categórica de não reconhecimento excedia a fonte do CFC e podia induzir política contábil inadequada.",
+    sourceLabel: "Orientação Técnica CFC nº 1/2026",
+    sourceUrl: "https://www.reformatributaria.com/wp-content/uploads/2026/07/CFC_Orientacao_Tecnica-1.pdf",
+  },
 ];
 
 export function addendaForChapter(n: number): Addenda[] {

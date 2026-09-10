@@ -137,7 +137,7 @@ export const TOC: TocItem[] = [
   },
   { kind: "page", id: "encerramento", href: "/encerramento", label: "Encerramento" },
   { kind: "page", id: "ferramentas", href: "/ferramentas", label: "Ferramentas" },
-  { kind: "page", id: "atualizacoes", href: "/atualizacoes", label: "Addenda 09/09/2026" },
+  { kind: "page", id: "atualizacoes", href: "/atualizacoes", label: "Changelog e addenda" },
   { kind: "page", id: "normas", href: "/normas", label: "Índice de normas" },
 ];
 

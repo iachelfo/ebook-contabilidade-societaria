@@ -6,7 +6,7 @@ export function AddendaBox({ chapter }: { chapter: number }) {
   if (!items.length) return null;
   return (
     <aside className="box atencao addenda">
-      <span className="rotulo">Addenda de 09/09/2026</span>
+      <span className="rotulo">Addenda editorial</span>
       <p>
         O texto do capítulo foi fechado em 08/09/2026. O que segue não substitui o
         raciocínio original: são fatos supervenientes, com fonte, para o leitor

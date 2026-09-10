@@ -145,7 +145,7 @@ export const NORMAS: Norma[] = [
     nome: "IN RFB 1.753/2017",
     data: "30/10/2017",
     objeto: "Procedimentos de anulação de efeitos; sete Anexos.",
-    href: "https://normasinternet2.receita.fazenda.gov.br/#/consulta/externa/87571",
+    href: "https://normas.receita.fazenda.gov.br/sijut2consulta/consulta.action?facetsExistentes=&orgaosSelecionados=RFB%3B+SRF&tiposAtosSelecionados=42&lblTiposAtosSelecionados=IN&ordemColuna=Publicacao&ordemDirecao=DESC&termoBusca=1753",
     capitulos: [1, 2, 4, 12, 13],
   },
   {
