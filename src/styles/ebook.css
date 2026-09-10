@@ -251,6 +251,33 @@ a.disp:focus-visible { outline:2px solid var(--azul-vivo); outline-offset:2px; }
 .capa .etiqueta { display:inline-block; font-size:.7rem; font-weight:700;
   letter-spacing:.12em; text-transform:uppercase; color:#fff;
   background:var(--azul-forte); padding:.4rem .85rem; border-radius:999px; }
+.destaque-aula {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.12rem;
+  width: max-content;
+  max-width: 100%;
+  margin: 0.85rem 0 1.2rem;
+  padding: 0.72rem 1.1rem 0.78rem;
+  background: var(--azul-forte);
+  color: #fff;
+  border-radius: 12px;
+}
+.destaque-aula strong {
+  display: block;
+  font-size: clamp(1.2rem, 1rem + 0.85vw, 1.6rem);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  line-height: 1.12;
+  color: #fff;
+}
+.destaque-aula span {
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
 .capa h1 { max-width:15em; }
 .capa .sub { font-size:1.22rem; line-height:1.5; color:var(--apoio);
   max-width:40em; margin-top:1rem; }
@@ -540,6 +567,7 @@ figcaption { font-size:.85rem; color:var(--apoio); margin-top:.9rem;
   min-height: 0;
 }
 .entrada-bloco { max-width: 46rem; }
+.entrada-bloco .destaque-aula { margin-top: 0; }
 .entrada h1 {
   font-size: clamp(2rem, 1.15rem + 2.6vw, 3.35rem);
   line-height: 1.1;
@@ -622,8 +650,9 @@ figcaption { font-size:.85rem; color:var(--apoio); margin-top:.9rem;
 .entrada-bloco .stagger-item:nth-child(1) { animation-delay: 50ms; }
 .entrada-bloco .stagger-item:nth-child(2) { animation-delay: 90ms; }
 .entrada-bloco .stagger-item:nth-child(3) { animation-delay: 130ms; }
-.entrada-indice.stagger-item { animation-delay: 170ms; }
-.entrada-rodape.stagger-item { animation-delay: 210ms; }
+.entrada-bloco .stagger-item:nth-child(4) { animation-delay: 170ms; }
+.entrada-indice.stagger-item { animation-delay: 210ms; }
+.entrada-rodape.stagger-item { animation-delay: 250ms; }
 @keyframes entrada-in {
   from { opacity: 0; transform: translateY(12px); filter: blur(3px); }
   to { opacity: 1; transform: none; filter: none; }
@@ -646,6 +675,8 @@ figcaption { font-size:.85rem; color:var(--apoio); margin-top:.9rem;
   .entrada-cluster { gap: 1rem; }
   .entrada h1 { font-size: 1.62rem; margin-bottom: .8rem; }
   .entrada-lead { font-size: 1rem; margin-bottom: 1.1rem; }
+  .destaque-aula { margin: 0 0 0.95rem; padding: 0.65rem 0.95rem 0.7rem; }
+  .destaque-aula strong { letter-spacing: 0.12em; }
   .btn-primario, .btn-secundario { width: 100%; text-align: center; }
   .btn-texto { width: 100%; text-align: center; padding: .75rem .55rem; }
   .entrada-indice { grid-template-columns: 1fr; gap: .55rem; margin-top: 1.1rem; padding-top: .9rem; }

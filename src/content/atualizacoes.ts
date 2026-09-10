@@ -76,7 +76,7 @@ export const ADDENDA: Addenda[] = [
     chapters: [7, 10],
     summary:
       "A LC 227/2026, de 13 de janeiro, deu nova redação ao art. 233 da LC 214/2025 e fixou a soma das alíquotas de IBS e CBS sobre os serviços financeiros do art. 189: 10,85% em 2027 e 2028; 11,00% em 2029; 11,15% em 2030; 11,30% em 2031; 11,50% em 2032; 12,50% em 2033. O capítulo 7 trata a LC 227 como fato consolidado na governança e não registra essa tabela, que já constava do texto compilado na data de fechamento.",
-    why: "Omissão do original, não fato posterior. Quem aplica 26,5% ou 27,91% a banco, seguradora, câmbio ou instituição de pagamento usa a alíquota errada. A cobertura de 08–09/09/2026 sobre o parecer no PLP 108/2024 descreve os mesmos percentuais já escritos pela LC 227.",
+    why: "Omissão do original, não fato posterior. Quem aplica 26,5% ou 27,91% a banco, seguradora, câmbio ou instituição de pagamento usa a alíquota errada. A cobertura de 08-09/09/2026 sobre o parecer no PLP 108/2024 descreve os mesmos percentuais já escritos pela LC 227.",
     sourceLabel: "LC 214/2025, art. 233, na redação da LC 227/2026 (texto compilado da Câmara)",
     sourceUrl: "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
   },
@@ -86,7 +86,7 @@ export const ADDENDA: Addenda[] = [
     title: "IRRF sobre dividendos arrecadou R$ 3,1 bi até julho, abaixo da previsão",
     chapters: [6],
     summary:
-      "A Receita Federal arrecadou R$ 3,145 bilhões de janeiro a julho de 2026 com IRRF sobre lucros e dividendos — 18,3% da previsão revisada de R$ 17,2 bilhões no ano. A orientação de 06/08/2026 confirma a escrituração no evento R-4010 da EFD-Reinf, com rendimento tributável quando a mesma PJ paga mais de R$ 50.000,00 no mês à mesma PF, à alíquota de 10% sobre o total, não sobre o excedente.",
+      "A Receita Federal arrecadou R$ 3,145 bilhões de janeiro a julho de 2026 com IRRF sobre lucros e dividendos: 18,3% da previsão revisada de R$ 17,2 bilhões no ano. A orientação de 06/08/2026 confirma a escrituração no evento R-4010 da EFD-Reinf, com rendimento tributável quando a mesma PJ paga mais de R$ 50.000,00 no mês à mesma PF, à alíquota de 10% sobre o total, não sobre o excedente.",
     why: "Não altera a regra do art. 6º-A da Lei 9.250/1995, mas muda o diagnóstico de comportamento: a janela de deliberação até 31/12/2025 e o planejamento de remuneração de sócios (capítulos 6 e 15) continuam a ser o serviço, agora com evidência de arrecadação abaixo do esperado.",
     sourceLabel: "Receita Federal, 06/08/2026, e Agência Brasil, 26/08/2026",
     sourceUrl:
@@ -99,7 +99,7 @@ export const ADDENDA: Addenda[] = [
     chapters: [8, 9, 11],
     summary:
       "A OT CFC nº 1/2026, publicada em 20 de julho de 2026, não é vinculante e não altera as NBCs. Esclarece que IBS e CBS, cobrados por fora, não integram a receita; admite divergência sobre o reconhecimento do passivo no ano-teste para o contribuinte adimplente com a obrigação acessória; e exige divulgação da política adotada nas notas explicativas de 2026.",
-    why: "O eBook cita a orientação no glossário e nas referências, mas o HTML original não abria o texto em nova aba. Sem o link, o leitor não confere o item 4.2 (agente arrecadador) nem os itens 29–30 (julgamento no ano-teste).",
+    why: "O eBook cita a orientação no glossário e nas referências, mas o HTML original não abria o texto em nova aba. Sem o link, o leitor não confere o item 4.2 (agente arrecadador) nem os itens 29-30 (julgamento no ano-teste).",
     sourceLabel: "Orientação Técnica CFC nº 1/2026",
     sourceUrl: "https://www.reformatributaria.com/wp-content/uploads/2026/07/CFC_Orientacao_Tecnica-1.pdf",
   },

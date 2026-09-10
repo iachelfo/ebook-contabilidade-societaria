@@ -16,7 +16,7 @@ export function TimelineView() {
                 {d}/{m}/{y}
               </strong>
               {event.date === TODAY ? " · hoje" : ""}
-              {" — "}
+              {" - "}
               {event.label}
             </p>
           </li>

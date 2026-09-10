@@ -24,7 +24,7 @@ type ReaderState = {
 
 const KEY = "chelfo-ebook-reader";
 /** Bump when the entrance cover is redesigned so returning readers see it once. */
-const COVER_REV = 2;
+const COVER_REV = 3;
 const TEMAS: Tema[] = ["sistema", "claro", "escuro"];
 const CORPOS: Corpo[] = ["compacto", "normal", "amplo"];
 

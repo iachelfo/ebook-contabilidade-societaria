@@ -10,10 +10,10 @@ function Atualizacoes() {
       <h2>O que mudou depois do fechamento de 08/09/2026</h2>
       <p className="lead">
         O texto dos quinze capítulos não foi reescrito, salvo a correção da
-        decomposição 8,8%/17,7% no capítulo 10 — erro material, não atualização
+        decomposição 8,8%/17,7% no capítulo 10: erro material, não atualização
         de calendário. Cada item abaixo é um acréscimo datado, com a fonte, o
-        capítulo atingido e a razão da inclusão. A regra do próprio eBook —
-        nenhuma afirmação normativa sem conferência na fonte oficial — é a que
+        capítulo atingido e a razão da inclusão. A regra do próprio eBook -
+        nenhuma afirmação normativa sem conferência na fonte oficial - é a que
         autoriza a addenda.
       </p>
       {ADDENDA.map((item) => (

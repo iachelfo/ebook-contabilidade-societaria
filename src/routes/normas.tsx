@@ -11,7 +11,7 @@ function Normas() {
       <p className="lead">
         O original falava em “vinte e sete diplomas”. As referências consolidadas
         já listavam mais. Aqui estão os principais, cada um com URL do Planalto,
-        da Receita, do CGIBS, do CGSN ou do CPC — inclusive os que o HTML original
+        da Receita, do CGIBS, do CGSN ou do CPC - inclusive os que o HTML original
         citava sem link (Lei 11.638/2007, Lei 15.079/2024, Decreto 13.075/2026,
         Orientação Técnica CFC nº 1/2026) e os que a addenda de 09/09/2026
         acrescentou (Resolução CGSN 186/2026, Resolução CGIBS 14/2026, Ato

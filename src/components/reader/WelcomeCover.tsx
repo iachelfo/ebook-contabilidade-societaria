@@ -47,12 +47,16 @@ export function WelcomeCover() {
 
         <div className="entrada-miolo">
           <div className="entrada-bloco">
+            <p className="destaque-aula stagger-item">
+              <strong>AULA 1</strong>
+              <span>Prof. Carlos Chelfo</span>
+            </p>
             <h1 id="entrada-titulo" className="stagger-item">
               Planejamento e Aspectos Fiscais da Contabilidade Societária
             </h1>
             <p className="entrada-lead stagger-item">
               Da ponte de neutralidade da Lei 12.973/2014 à virada do consumo da LC 214/2025.
-              Material completo da disciplina — para ler antes, consultar durante e usar depois.
+              Material completo da disciplina: para ler antes, consultar durante e usar depois.
             </p>
 
             <div className="entrada-acoes stagger-item" id="entrada-acoes">

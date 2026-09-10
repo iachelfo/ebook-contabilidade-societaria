@@ -123,7 +123,7 @@ export const NORMAS: Norma[] = [
     nome: "Lei 12.973/2014",
     data: "13/05/2014",
     objeto:
-      "Neutralidade; AVJ e AVP; subcontas; art. 50, simetria com a CSLL; art. 58, regra do futuro; art. 59, provisões. Publicada no DOU em 14/05/2014 — marco do art. 58.",
+      "Neutralidade; AVJ e AVP; subcontas; art. 50, simetria com a CSLL; art. 58, regra do futuro; art. 59, provisões. Publicada no DOU em 14/05/2014: marco do art. 58.",
     href: "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12973.htm",
     capitulos: [1, 2, 3, 4, 5, 11, 12, 13, 15],
   },
