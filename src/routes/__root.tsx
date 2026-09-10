@@ -17,7 +17,7 @@ export const Route = createRootRoute({
         content:
           "Lei 12.973/2014, LC 214/2025 e a transição para o IBS e a CBS. Material da disciplina PRC0004 do MBA em Planejamento Tributário e Recuperação de Créditos.",
       },
-      { name: "author", content: "Carlos Andre Moreira Chelfo" },
+      { name: "author", content: "ChelfoIA" },
       { name: "theme-color", content: "#0953B9" },
     ],
     links: [

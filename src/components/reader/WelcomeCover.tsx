@@ -96,7 +96,7 @@ export function WelcomeCover() {
             </p>
           ) : null}
           <p className="entrada-autor">
-            Carlos Andre Moreira Chelfo · fechado em 08/09/2026 · addenda 09/09/2026
+            ChelfoIA · fechado em 08/09/2026 · addenda 09/09/2026
             · 15 capítulos · 30 h
           </p>
         </footer>

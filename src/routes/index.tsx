@@ -14,7 +14,7 @@ function Home() {
     <>
       <HtmlContent html={htmlCapa} />
       <p className="remissao" style={{ marginTop: "-0.4rem" }}>
-        Autor: <strong>Carlos Andre Moreira Chelfo</strong> · BSSP Centro Educacional ·
+        Autor: <strong>ChelfoIA</strong> · BSSP Centro Educacional ·
         disciplina PRC0004. Texto fechado em 08/09/2026, com addenda editorial em
         09/09/2026.{" "}
         <button type="button" className="link-quiet" onClick={reopenCover}>
