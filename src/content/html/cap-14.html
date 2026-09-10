@@ -1,0 +1,181 @@
+<section class="capitulo" id="cap-14" aria-labelledby="cap-14-h">
+<span class="cap-num">Capítulo 14</span><span class="tempo">7 min</span>
+<h2 id="cap-14-h">Inteligência artificial que sobrevive a uma fiscalização</h2>
+
+<div class="objetivos">
+  <p class="obj-titulo">Ao final deste capítulo você será capaz de</p>
+  <ul>
+    <li>separar as tarefas em que o modelo de linguagem supera a regra fixa daquelas em que ele é o instrumento errado;</li>
+    <li>montar uma arquitetura com base normativa versionada, cálculo determinístico e trilha de auditoria;</li>
+    <li>reconhecer as quatro armadilhas que transformam a ferramenta em fonte de passivo.</li>
+  </ul>
+</div>
+
+<p>Este capítulo trata de engenharia, não de futurologia. A pergunta não é se a inteligência
+artificial vai mudar a profissão; é qual arquitetura produz um papel de trabalho que você
+assina e defende. A diferença entre as duas perguntas é a diferença entre uma apresentação
+de congresso e um projeto que entra em produção.</p>
+
+<h3>A regra de alocação: três tipos de tarefa</h3>
+
+<p>Toda tarefa do trabalho contábil-fiscal cai em um de três tipos, e a alocação errada é a
+origem de quase todo fracasso de projeto.</p>
+
+<p>O primeiro tipo é <strong>determinístico</strong>: cálculo, conciliação, soma,
+comparação de saldos, aplicação de alíquota, valor presente. Aqui o modelo de linguagem é o
+instrumento errado, porque ele é probabilístico e a resposta certa é única. Essas tarefas
+vão para código, e o código é auditável, reproduzível e testável. Um agente pode
+<em>orquestrar</em> a chamada da função, mas não deve executar a aritmética.</p>
+
+<p>O segundo tipo é <strong>interpretativo sobre texto sujo</strong>: ler contrato,
+classificar descrição de item em nota fiscal, extrair cláusula, identificar obrigação de
+performance, comparar política contábil com pronunciamento. Aqui o modelo supera qualquer
+regra fixa, porque o insumo é linguagem natural inconsistente, abreviada e variável entre
+fontes. É neste tipo que está o ganho real.</p>
+
+<p>O terceiro tipo é <strong>decisório com responsabilidade</strong>: qualificar
+juridicamente, escolher premissa, assumir posição, assinar. Aqui não há delegação possível,
+porque a responsabilidade profissional é pessoal e indelegável. O sistema pode organizar a
+decisão, ordená-la por relevância e apresentar as opções com o valor de cada uma; quem
+decide responde.</p>
+
+<h3>A arquitetura mínima</h3>
+
+<p>Quatro componentes, e nenhum deles é dispensável em trabalho que será oposto a terceiro.</p>
+
+<p>O primeiro é a <strong>base normativa versionada</strong>. O modelo nunca cita
+dispositivo de memória. Ele recupera o texto de uma base que contém a norma com data de
+publicação, data de vigência, redação atual e a norma que deu essa redação. Sem versionamento,
+a ferramenta cita a <a class="disp" href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener noreferrer" title="Abrir LC 214/2025 na fonte oficial, em nova aba">LC 214/2025</a> na redação de 2025, que a <a class="disp" href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm" target="_blank" rel="noopener noreferrer" title="Abrir LC 227/2026 na fonte oficial, em nova aba">LC 227/2026</a> alterou em mais de
+cem artigos, e produz parecer errado com aparência de rigor.</p>
+
+<p>Para dimensionar a velocidade do alvo: o informe técnico do documento fiscal eletrônico
+que trata dos campos de IBS e CBS teve nove versões publicadas entre maio de 2025 e abril de
+2026, com criação de códigos, alteração de textos e ativação ou desativação de códigos por
+modelo de documento. É uma revisão a cada quarenta dias, aproximadamente. Nenhuma equipe
+acompanha isso lendo; acompanha-se com base versionada e alerta de mudança.</p>
+
+<p>O segundo é a <strong>citação obrigatória com trecho literal</strong>. Toda saída traz o
+dispositivo e o trecho que a sustenta. Isso muda a natureza da revisão humana: o revisor
+confere se o trecho diz o que a conclusão afirma, em vez de reler a fonte inteira. É o que
+torna a revisão viável em escala e o resultado auditável.</p>
+
+<p>O terceiro é a <strong>separação entre leitura e cálculo</strong>, já explicada, com
+validação cruzada por dupla implementação nos números que importam.</p>
+
+<p>O quarto é a <strong>trilha de auditoria</strong>: qual versão da base foi consultada,
+em que data, qual prompt, qual saída, quem revisou e o que mudou na revisão. Sem isso, seis
+meses depois ninguém consegue explicar por que a conclusão foi aquela, e a ferramenta que
+deveria reduzir risco passa a criá-lo.</p>
+
+<aside class="box ia">
+  <span class="rotulo">Solução com IA</span>
+  <p><strong>As cinco aplicações com melhor retorno nesta disciplina, em ordem.</strong></p>
+  <p><strong>1. Extração de obrigações de performance da carteira de contratos.</strong>
+  Alto valor porque a qualificação de principal ou agente move a base de quatro tributos ao
+  mesmo tempo. Insumo textual volumoso que ninguém lê inteiro. Saída com citação de cláusula.</p>
+  <p><strong>2. Conciliação de subcontas.</strong> Alto valor porque a ausência de subconta
+  custa 34% do ganho e o teste é mecânico. Ideal para execução determinística sob
+  orquestração, com o modelo apenas identificando quais ativos são mensurados a valor justo
+  a partir do plano de contas e das notas explicativas.</p>
+  <p><strong>3. Monitoramento normativo com recuperação sobre base versionada.</strong> Alto
+  valor porque a norma mudou três vezes em vinte meses e continuará mudando. Cadência
+  mensal, saída em ficha com dispositivo e data de verificação.</p>
+  <p><strong>4. Varredura de cláusulas indexadas a faturamento.</strong> Alto volume, baixa
+  complexidade técnica, resultado imediatamente acionável pelo jurídico.</p>
+  <p><strong>5. Classificação de itens contra a vedação do art. 57.</strong> Insumo é
+  descrição de item em nota fiscal, que é o texto mais sujo do ecossistema. Exige contexto
+  de centro de custo e destino, sob pena de erro sistemático.</p>
+</aside>
+
+<h3>As quatro armadilhas</h3>
+
+<p>A primeira, e a mais cara, é a <strong>alucinação de dispositivo</strong>. Modelos de
+linguagem produzem número de artigo, de tema repetitivo e de acórdão com fluência
+perfeita e conteúdo inventado. A defesa não é pedir ao modelo que não invente; é impedir
+estruturalmente que ele possa, obrigando a citação a vir da base recuperada. Quando o trecho
+não aparece na recuperação, a saída correta é registrar que não foi confirmado.</p>
+
+<p>A segunda é a <strong>base desatualizada</strong>, que é pior que base ausente, porque
+produz confiança injustificada. Uma ferramenta que responde sobre a <a class="disp" href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener noreferrer" title="Abrir LC 214/2025 na fonte oficial, em nova aba">LC 214/2025</a> sem
+incorporar a <a class="disp" href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm" target="_blank" rel="noopener noreferrer" title="Abrir LC 227/2026 na fonte oficial, em nova aba">LC 227/2026</a> dará respostas coerentes, bem fundamentadas e erradas.</p>
+
+<p>A terceira é a <strong>ausência de rastreabilidade</strong>. Conclusão sem registro de
+como se chegou a ela não é papel de trabalho, é opinião. Em contencioso, opinião sem
+lastro documental não sustenta tese.</p>
+
+<p>A quarta é a <strong>automação de julgamento</strong>. Delegar ao sistema a qualificação
+jurídica, e não apenas a triagem, transfere para uma ferramenta uma responsabilidade que
+permanece, perante o conselho profissional e perante o cliente, integralmente de quem
+assina.</p>
+
+<aside class="box erro">
+  <span class="rotulo">Erro comum</span>
+  <p><strong>Perguntar ao modelo "qual o artigo que trata disso" e usar a resposta.</strong>
+  É o uso mais frequente e o mais perigoso, porque funciona na maioria das vezes, e a
+  minoria em que falha é indistinguível da maioria em que acerta. A resposta plausível e a
+  resposta correta têm exatamente a mesma aparência.
+  <strong>Consequência:</strong> peça protocolada com dispositivo inexistente ou revogado,
+  com dano à credibilidade que nenhum ganho de produtividade compensa.</p>
+  <p><strong>O uso correto da mesma ferramenta:</strong> "localize na base normativa os
+  dispositivos que tratam disso e transcreva o trecho de cada um, com a norma que deu a
+  redação vigente". A diferença entre as duas perguntas é a diferença entre recuperação e
+  geração.</p>
+</aside>
+
+<aside class="box caso">
+  <span class="rotulo">Caso real</span>
+  <p><strong>A alucinação de dispositivo não é hipótese: ela está medida.</strong> Um estudo
+  do RegLab e do Institute for Human-Centered Artificial Intelligence da Universidade
+  Stanford, divulgado em maio de 2024, submeteu mais de duzentas consultas jurídicas abertas
+  a ferramentas comerciais de pesquisa jurídica com recuperação aumentada por busca, isto é,
+  ferramentas já desenhadas para reduzir alucinação. As taxas de resposta com erro ficaram
+  acima de 17% em duas delas e acima de 34% em outra.</p>
+  <p>Para modelos de linguagem generalistas em tarefas jurídicas, o estudo de Dahl e outros,
+  publicado no Journal of Legal Analysis, volume 16, número 1, de 2024, mediu 58% em um
+  modelo e 88% em outro. São ordens de grandeza que tornam inviável o uso sem verificação.</p>
+  <p><strong>E há caso brasileiro.</strong> No Superior Tribunal de Justiça, no
+  Habeas Corpus 1.094.270, verificou-se que os dezesseis julgados citados na petição
+  continham erro de relatoria, de órgão julgador ou de tipo de decisão. Dezesseis de
+  dezesseis.</p>
+  <p><strong>A lição para esta disciplina:</strong> o problema não se resolve escolhendo a
+  ferramenta certa, porque as ferramentas especializadas também erram. Resolve-se pela
+  arquitetura, obrigando toda citação a vir da base recuperada e tratando ausência de trecho
+  como ausência de resposta. Quem protocola sem conferir a citação está apostando contra
+  números conhecidos.</p>
+</aside>
+
+<aside class="box negocio">
+  <span class="rotulo">Oportunidade de negócio</span>
+  <p><strong>Implantação de base normativa versionada como ativo do escritório.</strong> A
+  base descrita neste capítulo não é custo de projeto, é ativo reutilizável. Montada uma vez,
+  ela atende toda a carteira, e o custo marginal do cliente seguinte tende a zero. Escritório
+  que a constrói passa a operar com uma vantagem que o concorrente não replica em um
+  trimestre.</p>
+  <p><strong>O produto que se vende ao cliente:</strong> não a base, mas o resultado dela.
+  Monitoramento normativo com relatório mensal apontando o que mudou, qual conta da empresa é
+  afetada e qual a decisão pendente, com o dispositivo citado. É receita recorrente com
+  entrega verificável, que é a combinação mais difícil de conseguir em serviço técnico.</p>
+  <p><strong>O erro a evitar:</strong> vender a ferramenta em vez do resultado. Cliente não
+  compra recuperação aumentada por busca; compra a certeza de não estar aplicando norma
+  revogada.</p>
+</aside>
+
+<details class="quiz">
+  <summary>Teste seu conhecimento (capítulo 14)</summary>
+  <div class="quiz-corpo">
+  <ol>
+    <li>De memória: quais são os três tipos de tarefa e a que instrumento cada um pertence?
+      <details><summary>Conferir</summary><p>Determinístico, que vai para código;
+      interpretativo sobre texto sujo, em que o modelo de linguagem supera regra fixa; e
+      decisório com responsabilidade, que permanece com a pessoa que assina.</p></details></li>
+    <li>Por que base desatualizada é pior que base ausente?
+      <details><summary>Conferir</summary><p>Porque a base ausente produz recusa de resposta,
+      que é visível, e a base desatualizada produz resposta coerente e bem fundamentada que
+      está errada, o que é invisível até virar problema.</p></details></li>
+    <li>Reescreva um prompt que você usa hoje, transformando-o de pergunta de geração em
+      pergunta de recuperação com citação obrigatória.</li>
+  </ol>
+  </div>
+</details>
+</section>

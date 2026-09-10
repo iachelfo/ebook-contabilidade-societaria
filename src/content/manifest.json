@@ -1,0 +1,128 @@
+[
+  {
+    "id": "capa",
+    "file": "capa.html",
+    "title": "Planejamento e Aspectos Fiscais da Contabilidade Societária",
+    "chars": 1146,
+    "textChars": 485
+  },
+  {
+    "id": "como-usar",
+    "file": "guia.html",
+    "title": "Como usar este material",
+    "chars": 11191,
+    "textChars": 5557
+  },
+  {
+    "id": "cap-1",
+    "file": "cap-1.html",
+    "title": "A ponte contábil-fiscal",
+    "chars": 19472,
+    "textChars": 13787
+  },
+  {
+    "id": "cap-2",
+    "file": "cap-2.html",
+    "title": "Valor justo, valor presente e a subconta que decide tudo",
+    "chars": 15405,
+    "textChars": 11711
+  },
+  {
+    "id": "cap-3",
+    "file": "cap-3.html",
+    "title": "Receita bruta: o conceito que sustenta quatro tributos",
+    "chars": 16918,
+    "textChars": 11255
+  },
+  {
+    "id": "cap-4",
+    "file": "cap-4.html",
+    "title": "CPC 47 e o momento em que a receita existe",
+    "chars": 15267,
+    "textChars": 11940
+  },
+  {
+    "id": "cap-5",
+    "file": "cap-5.html",
+    "title": "Subvenções: quando o legislador desmonta um planejamento inteiro",
+    "chars": 18630,
+    "textChars": 12752
+  },
+  {
+    "id": "cap-6",
+    "file": "cap-6.html",
+    "title": "O circuito se fecha: o lucro contábil vira base do imposto do sócio",
+    "chars": 22169,
+    "textChars": 15110
+  },
+  {
+    "id": "cap-7",
+    "file": "cap-7.html",
+    "title": "A virada do consumo",
+    "chars": 14507,
+    "textChars": 10327
+  },
+  {
+    "id": "cap-8",
+    "file": "cap-8.html",
+    "title": "Base por fora: o que muda na demonstração do resultado",
+    "chars": 19654,
+    "textChars": 15656
+  },
+  {
+    "id": "cap-9",
+    "file": "cap-9.html",
+    "title": "O crédito que depende de terceiro: um ativo condicionado no balanço",
+    "chars": 17789,
+    "textChars": 14088
+  },
+  {
+    "id": "cap-10",
+    "file": "cap-10.html",
+    "title": "Precificação: a álgebra de sair de dentro para fora",
+    "chars": 12206,
+    "textChars": 8463
+  },
+  {
+    "id": "cap-11",
+    "file": "cap-11.html",
+    "title": "A transição: o que já aconteceu e o que ainda vai acontecer",
+    "chars": 30468,
+    "textChars": 21571
+  },
+  {
+    "id": "cap-12",
+    "file": "cap-12.html",
+    "title": "Execução",
+    "chars": 12112,
+    "textChars": 8440
+  },
+  {
+    "id": "cap-13",
+    "file": "cap-13.html",
+    "title": "Catálogo de erros: o que cada um custa e como detectar",
+    "chars": 7480,
+    "textChars": 5177
+  },
+  {
+    "id": "cap-14",
+    "file": "cap-14.html",
+    "title": "Inteligência artificial que sobrevive a uma fiscalização",
+    "chars": 11971,
+    "textChars": 9625
+  },
+  {
+    "id": "cap-15",
+    "file": "cap-15.html",
+    "title": "O calendário das oportunidades: o que abre e o que fecha",
+    "chars": 12178,
+    "textChars": 8270
+  },
+  {
+    "id": "encerramento",
+    "file": "encerramento.html",
+    "title": "Encerramento: o que levar desta disciplina",
+    "chars": 21085,
+    "textChars": 8692
+  }
+]

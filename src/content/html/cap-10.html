@@ -1,0 +1,175 @@
+<section class="capitulo" id="cap-10" aria-labelledby="cap-10-h">
+<span class="cap-num">Capítulo 10</span><span class="tempo">5 min</span>
+<h2 id="cap-10-h">Precificação: a álgebra de sair de dentro para fora</h2>
+
+<div class="objetivos">
+  <p class="obj-titulo">Ao final deste capítulo você será capaz de</p>
+  <ul>
+    <li>converter preço com tributo por dentro em preço por fora preservando a margem;</li>
+    <li>calcular o efeito diferente da mesma operação sobre adquirente contribuinte e não contribuinte;</li>
+    <li>reconhecer por que o setor de serviços tende a sofrer mais que a indústria.</li>
+  </ul>
+</div>
+
+<p>Este capítulo é curto porque a matemática é simples. Ele é decisivo porque a maior parte
+dos erros de precificação na transição vem de aplicar a alíquota nova sobre o preço antigo,
+o que produz um resultado errado em duas direções ao mesmo tempo.</p>
+
+<h3>As duas fórmulas</h3>
+
+<p>No regime por dentro, o tributo compõe a própria base. Se <code>P</code> é o preço
+cobrado e <code>t</code> a soma das alíquotas por dentro, o valor que sobra para a empresa
+é <code>P × (1 − t)</code>. No regime por fora, o preço da operação é a base, e o tributo
+se acrescenta: o adquirente desembolsa <code>P' × (1 + a)</code>, onde <code>a</code> é a
+alíquota do IBS somada à da CBS, e a empresa recebe <code>P'</code>.</p>
+
+<p>Preservar a receita líquida significa igualar o que sobra para a empresa nos dois
+regimes, e a fórmula sai direto:</p>
+
+<aside class="box atencao">
+  <span class="rotulo">Correção editorial · 09/09/2026</span>
+  <p>A edição fechada em 08/09/2026 atribuiu à nota técnica da SERT, de agosto de 2024, a
+  decomposição <strong>8,8% de IBS e 17,7% de CBS</strong>. Essa ordem está invertida. A
+  nota da SERT e a <a class="disp" href="https://www.contabeis.com.br/noticias/78568/cgibs-estima-aliquota-de-referencia-de-27-91-para-ibs-e-cbs/" target="_blank" rel="noopener noreferrer" title="Abrir cobertura da Resolução CGIBS nº 14/2026">Resolução CGIBS nº 14, de 29 de julho de 2026</a>
+  trabalham com a parcela maior no IBS (substituto do ICMS e do ISS) e a menor na CBS
+  (substituta da Contribuição para o PIS/Pasep e da Cofins): <strong>17,70% de IBS e 8,80%
+  de CBS</strong> na estimativa de 26,5%, atualizada para <strong>18,70% de IBS e 9,21% de
+  CBS, total 27,91%</strong>. A mecânica da conversão não muda; o número que entra em
+  <code>a</code> muda. O 26,5% permanece na tabela pedagógica abaixo porque o texto original
+  o declara como premissa, não como alíquota fixada. A tabela seguinte refaz as quatro
+  linhas com 27,91%.</p>
+</aside>
+
+<aside class="box calculo">
+  <span class="rotulo">Memória de cálculo</span>
+  <p><strong>Fórmula de conversão que preserva a margem.</strong></p>
+  <p><code>P' = P × (1 − t)</code>, onde <code>P</code> é o preço atual com tributos por
+  dentro, <code>t</code> é a soma das alíquotas por dentro e <code>P'</code> é o novo preço,
+  que passa a ser a base do IBS e da CBS.</p>
+  <p>O desembolso total do adquirente passa a ser <code>P' × (1 + a)</code>, e a variação do
+  desembolso é <code>(1 − t) × (1 + a) − 1</code>.</p>
+  <div class="tabela-wrap">
+  <table>
+    <caption>Efeito para o adquirente, por setor, com alíquota de 26,5% (premissa pedagógica da SERT, ago/2024)</caption>
+    <thead><tr><th>Perfil</th><th class="num">t atual</th><th class="num">P' sobre P</th><th class="num">Desembolso do adquirente</th></tr></thead>
+    <tbody>
+      <tr><td>Indústria: ICMS 18%, PIS 1,65%, Cofins 7,6%</td><td class="num">27,25%</td><td class="num">72,75%</td><td class="num">-7,97%</td></tr>
+      <tr><td>Comércio: ICMS 12%, PIS 1,65%, Cofins 7,6%</td><td class="num">21,25%</td><td class="num">78,75%</td><td class="num">-0,38%</td></tr>
+      <tr><td>Serviço no lucro real: ISS 5%, PIS 1,65%, Cofins 7,6%</td><td class="num">14,25%</td><td class="num">85,75%</td><td class="num">+8,47%</td></tr>
+      <tr><td>Serviço no presumido: ISS 5%, PIS e Cofins cumulativos 3,65%</td><td class="num">8,65%</td><td class="num">91,35%</td><td class="num">+15,56%</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Verificação de uma linha, para você refazer:</strong> serviço no presumido,
+  <code>t</code> = 0,0865. <code>P'</code> = 1 − 0,0865 = 0,9135, ou 91,35% do preço atual.
+  Desembolso = 0,9135 × 1,265 = 1,1556, isto é, 15,56% acima do preço de hoje.</p>
+  <div class="tabela-wrap">
+  <table>
+    <caption>As mesmas quatro linhas, com a estimativa da Resolução CGIBS nº 14/2026 (27,91%)</caption>
+    <thead><tr><th>Perfil</th><th class="num">t atual</th><th class="num">P' sobre P</th><th class="num">Desembolso a 27,91%</th></tr></thead>
+    <tbody>
+      <tr><td>Indústria</td><td class="num">27,25%</td><td class="num">72,75%</td><td class="num">-6,95%</td></tr>
+      <tr><td>Comércio</td><td class="num">21,25%</td><td class="num">78,75%</td><td class="num">+0,73%</td></tr>
+      <tr><td>Serviço no lucro real</td><td class="num">14,25%</td><td class="num">85,75%</td><td class="num">+9,68%</td></tr>
+      <tr><td>Serviço no presumido</td><td class="num">8,65%</td><td class="num">91,35%</td><td class="num">+16,85%</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Verificação da última linha com 27,91%:</strong> 0,9135 × 1,2791 = 1,1685, ou
+  +16,85%. O comércio, que na premissa de 26,5% saía quase estável (−0,38%), passa a
+  desembolso positivo. A alíquota de 27,91% não é a alíquota de referência definitiva:
+  o art. 18 da <a class="disp" href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener noreferrer" title="Abrir LC 214/2025 na fonte oficial, em nova aba">LC 214/2025</a>
+  reserva essa fixação a resolução do Senado, e o teto político de 26,5% continua a
+  obrigar o Executivo a enviar projeto de lei complementar se a soma das alíquotas de
+  referência estimadas o ultrapassar.</p>
+  <p><strong>Premissa explícita, e de onde ela vem.</strong> A alíquota conjunta de 26,5%,
+  decomposta em estimativas de <strong>17,7% para o IBS e 8,8% para a CBS</strong>, consta
+  de nota técnica da Secretaria Extraordinária da Reforma Tributária do Ministério da
+  Fazenda, de agosto de 2024. A Resolução CGIBS nº 14/2026 atualizou o total para 27,91%
+  (18,70% de IBS e 9,21% de CBS), para subsidiar o orçamento de 2027 — e declarou que
+  esse número <strong>não é a alíquota de referência definitiva</strong>. Pelo art. 349 da
+  <a class="disp" href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener noreferrer" title="Abrir LC 214/2025 na fonte oficial, em nova aba">LC 214/2025</a>,
+  as alíquotas de referência são fixadas por <strong>resolução do Senado Federal</strong>,
+  no ano anterior ao de vigência, com base em cálculos do Tribunal de Contas da União, que os
+  envia até 15 de setembro. Refaça os números com a alíquota efetivamente fixada quando ela
+  existir; a mecânica não muda, apenas o resultado. E, para atividades com redução de 30% ou
+  de 60%, use a alíquota reduzida aplicável, porque o sinal do resultado pode inverter.</p>
+</aside>
+
+<h3>Por que a tabela explica o debate público</h3>
+
+<p>A última coluna resume, em quatro linhas, toda a discussão setorial sobre a reforma. A
+indústria e o comércio, que hoje carregam carga alta por dentro e crédito limitado, saem
+com desembolso menor ou estável. O serviço, que hoje carrega carga baixa e tem pouca
+aquisição creditável, porque seu principal custo é folha de pagamento, e folha não gera
+crédito, sai com desembolso maior. O efeito não é ideológico, é aritmético: quem tinha
+pouca carga por dentro e pouco crédito a tomar sente mais a alíquota nova.</p>
+
+<p>Daí a existência do regime diferenciado com redução de 30% das alíquotas para
+determinadas profissões regulamentadas, previsto no Capítulo II do Título IV do Livro I da
+<a class="disp" href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener noreferrer" title="Abrir LC 214/2025 na fonte oficial, em nova aba">LC 214/2025</a>. A redução mitiga, mas não elimina, e o cálculo precisa ser refeito caso a caso
+com a alíquota efetivamente aplicável à atividade.</p>
+
+<aside class="box erro">
+  <span class="rotulo">Erro comum</span>
+  <p><strong>Aplicar a alíquota nova sobre o preço atual.</strong> A conta errada é
+  <code>P × (1 + a)</code>, que superestima o preço final e leva a empresa a concluir que
+  precisará de um aumento que não precisa. A conta certa parte de <code>P' = P × (1 − t)</code>,
+  porque a base do tributo novo é o preço sem tributo, e não o preço cheio de hoje.
+  <strong>Consequência:</strong> decisão errada de precificação, com dois desfechos: perda
+  de competitividade, se a empresa repassa demais, ou perda de margem, se ela absorve um
+  aumento que não existia.</p>
+</aside>
+
+<aside class="box ia">
+  <span class="rotulo">Solução com IA</span>
+  <p><strong>Motor de reprecificação por item, canal e perfil de adquirente.</strong> A
+  fórmula é trivial; a dificuldade é a combinatória. Cada item tem carga atual própria, que
+  varia por estado de origem e destino no ICMS, por regime de PIS e Cofins e por
+  enquadramento no ISS. Cada cliente tem perfil próprio: contribuinte do regime regular, que
+  credita, ou não contribuinte, para quem o tributo é preço final. O número de combinações
+  cresce rápido e é onde a planilha manual quebra.</p>
+  <p><strong>A arquitetura:</strong> cálculo integralmente determinístico, com o modelo de
+  linguagem apenas na etapa de montar a matriz de entrada, lendo tabelas de preço, cadastros
+  de cliente e regras comerciais escritas em texto livre. Depois, a simulação roda em código,
+  com teste que confere se a receita líquida projetada preserva a margem alvo.</p>
+  <p><strong>A saída que decide:</strong> não o preço novo, mas a lista de itens e clientes
+  em que a manutenção da margem exige aumento de desembolso do adquirente acima de um limite
+  definido pela diretoria comercial. Esses são os casos que precisam de conversa antes de
+  virar tabela de preço.</p>
+</aside>
+
+<aside class="box negocio">
+  <span class="rotulo">Oportunidade de negócio</span>
+  <p><strong>Reprecificação assistida com simulação por cliente e por canal.</strong> O
+  serviço entrega mais do que uma planilha: entrega a decisão de preço por linha de produto
+  e por perfil de cliente, separando adquirente contribuinte do regime regular, que credita,
+  de adquirente não contribuinte ou consumidor final, que não credita e para quem o efeito é
+  integralmente preço.</p>
+  <p><strong>O entregável:</strong> matriz de preços por produto e por canal, com margem
+  projetada, análise de sensibilidade à alíquota de referência e roteiro de comunicação
+  comercial para o cliente que verá o preço mudar.</p>
+  <p><strong>A janela:</strong> a decisão de preço precisa estar tomada antes do início do
+  exercício em que a alíquota muda, porque preço se comunica e se contrata com antecedência.
+  Quem chegar em janeiro chegou tarde.</p>
+</aside>
+
+<details class="quiz">
+  <summary>Teste seu conhecimento (capítulo 10)</summary>
+  <div class="quiz-corpo">
+  <ol>
+    <li>Escreva de memória a fórmula de conversão que preserva a receita líquida e explique
+      por que ela parte do preço sem tributo.
+      <details><summary>Conferir</summary><p><code>P' = P × (1 − t)</code>. Parte do preço
+      sem tributo porque, no regime por fora, a base de cálculo é o valor da operação sem o
+      próprio IBS e sem a própria CBS, na forma do art. 12, § 2º, inciso I, da <a class="disp" href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm" target="_blank" rel="noopener noreferrer" title="Abrir LC 214/2025 na fonte oficial, em nova aba">LC 214/2025</a>.</p></details></li>
+    <li>Por que o setor de serviços tende a sofrer mais que a indústria?
+      <details><summary>Conferir</summary><p>Porque parte de carga por dentro menor e tem
+      base creditável menor, já que seu principal custo é folha de pagamento, que não gera
+      crédito. Alíquota maior sobre base pouco creditável produz aumento de carga.</p></details></li>
+    <li>Refaça a tabela para a alíquota reduzida em 30% e verifique em quais perfis o sinal
+      do resultado inverte.</li>
+  </ol>
+  </div>
+</details>
+</section>
