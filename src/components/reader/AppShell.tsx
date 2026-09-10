@@ -1,5 +1,5 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { WelcomeCover } from "./WelcomeCover";
 import { TocNav } from "./TocNav";
 import { SearchDialog } from "./SearchDialog";
@@ -26,6 +26,10 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const [busca, setBusca] = useState(false);
   const [prefersDark, setPrefersDark] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [chromeOn, setChromeOn] = useState(true);
+  const hovering = useRef(false);
+  const lastY = useRef(0);
+  const holdOpen = sumario || busca;
 
   useEffect(() => {
     hydrate();
@@ -51,10 +55,21 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     setLastPath(pathname);
     setSumario(false);
+    setChromeOn(true);
+    lastY.current = window.scrollY;
     const onScroll = () => {
       const el = document.documentElement;
+      const y = el.scrollTop;
       const total = el.scrollHeight - el.clientHeight;
-      setProgress(total > 0 ? (el.scrollTop / total) * 100 : 0);
+      setProgress(total > 0 ? (y / total) * 100 : 0);
+      if (hovering.current) {
+        lastY.current = y;
+        return;
+      }
+      if (y < 28) setChromeOn(true);
+      else if (y > lastY.current + 8) setChromeOn(false);
+      else if (y < lastY.current - 6) setChromeOn(true);
+      lastY.current = y;
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -62,17 +77,32 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   }, [pathname, setLastPath]);
 
   useEffect(() => {
+    const onMove = (event: MouseEvent) => {
+      if (event.clientY < 36) setChromeOn(true);
+    };
+    window.addEventListener("mousemove", onMove, { passive: true });
+    return () => window.removeEventListener("mousemove", onMove);
+  }, []);
+
+  useEffect(() => {
     const onKey = (event: KeyboardEvent) => {
       const t = event.target as HTMLElement | null;
       const typing = t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable);
       if (typing) return;
+      if (event.key === "Escape") {
+        setSumario(false);
+        setBusca(false);
+        return;
+      }
       if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
         event.preventDefault();
         setBusca(true);
+        setChromeOn(true);
       }
       if (event.key === "/" && !event.metaKey && !event.ctrlKey) {
         event.preventDefault();
         setBusca(true);
+        setChromeOn(true);
       }
     };
     window.addEventListener("keydown", onKey);
@@ -98,17 +128,40 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     return <WelcomeCover />;
   }
 
+  const barOn = chromeOn || holdOpen;
+
   return (
     <div className="ebook min-h-dvh">
       <a href="#conteudo" className="btn ebook-skip">
         Ir para o conteúdo
       </a>
-      <div className="topo no-print">
-        <div className="topo-in">
+
+      <div
+        className="chrome-hotzone no-print"
+        onMouseEnter={() => {
+          hovering.current = true;
+          setChromeOn(true);
+        }}
+        onMouseLeave={() => {
+          hovering.current = false;
+        }}
+      />
+
+      <header
+        className={`chrome no-print${barOn ? "" : " is-off"}`}
+        onMouseEnter={() => {
+          hovering.current = true;
+          setChromeOn(true);
+        }}
+        onMouseLeave={() => {
+          hovering.current = false;
+        }}
+      >
+        <div className="chrome-island">
           <Link to="/" className="marca-topo" style={{ textDecoration: "none" }}>
-            ChelfoIA <span>· eBook da disciplina</span>
+            ChelfoIA <span>· PRC0004</span>
           </Link>
-          <nav className="topo-nav" aria-label="Ferramentas">
+          <nav className="topo-nav" aria-label="Ferramentas de leitura">
             <button className="btn" type="button" onClick={() => setSumario(true)}>
               Sumário
             </button>
@@ -134,15 +187,22 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               Imprimir
             </button>
           </nav>
+          <div className="progresso" style={{ width: `${progress.toFixed(2)}%` }} />
         </div>
-        <div className="progresso" style={{ width: `${progress.toFixed(2)}%` }} />
-      </div>
+      </header>
+
+      {!barOn ? (
+        <button
+          type="button"
+          className="chrome-peek no-print"
+          aria-label="Mostrar menu de leitura"
+          onClick={() => setChromeOn(true)}
+        >
+          Menu
+        </button>
+      ) : null}
 
       <div className="pagina">
-        <aside className="lateral no-print" aria-label="Sumário lateral">
-          <h2>Nesta disciplina</h2>
-          <TocNav currentHref={pathname} />
-        </aside>
         <main className="miolo" id="conteudo">
           <UseNotice />
           {children}
@@ -152,9 +212,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       {sumario ? (
         <div className="no-print">
           <button type="button" className="sheet-backdrop" aria-label="Fechar sumário" onClick={() => setSumario(false)} />
-          <div className="sheet-panel" role="dialog" aria-label="Sumário">
+          <div className="sheet-panel" role="dialog" aria-modal="true" aria-label="Sumário">
             <div className="mark-row" style={{ justifyContent: "space-between", marginBottom: "1rem" }}>
-              <h2 style={{ margin: 0, fontSize: "1rem" }}>Sumário</h2>
+              <h2 style={{ margin: 0, fontSize: "1rem" }}>Nesta disciplina</h2>
               <button className="btn" type="button" onClick={() => setSumario(false)}>
                 Fechar
               </button>
